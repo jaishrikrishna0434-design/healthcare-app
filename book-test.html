@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Test - Healthcare App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="flex justify-between items-center p-6 border-b border-gray-800">
+    <h1 class="text-2xl font-bold">Healthcare App</h1>
+    <nav class="space-x-6 hidden md:flex">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="symptom-checker.html" class="hover:text-blue-400">Check Symptoms</a>
+      <a href="find-doctor.html" class="hover:text-blue-400">Find Doctor</a>
+      <a href="book-test.html" class="text-blue-400 font-semibold">Book a Test</a>
+      <a href="health-records.html" class="hover:text-blue-400">Health Records</a>
+      <a href="find-clinic.html" class="hover:text-blue-400">Find Clinic</a>
+      <a href="profile.html" class="hover:text-blue-400">My Profile</a>
+      <a href="settings.html" class="hover:text-blue-400">Settings</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow container mx-auto px-6 py-12 max-w-3xl">
+    <h2 class="text-3xl font-extrabold mb-6">Book a Test</h2>
+    <form class="space-y-6" onsubmit="return false;">
+      <div>
+        <label for="test-type" class="block text-lg font-semibold mb-2">Select Test Type:</label>
+        <select
+          id="test-type"
+          class="w-full p-3 rounded bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        >
+          <option value="" disabled selected>Select a test</option>
+          <option>Blood Test</option>
+          <option>COVID-19 Test</option>
+          <option>X-Ray</option>
+          <option>MRI Scan</option>
+          <option>Ultrasound</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="date" class="block text-lg font-semibold mb-2">Select Date:</label>
+        <input
+          type="date"
+          id="date"
+          class="w-full p-3 rounded bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="location" class="block text-lg font-semibold mb-2">Location:</label>
+        <input
+          type="text"
+          id="location"
+          class="w-full p-3 rounded bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Enter your address"
+          required
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition"
+        onclick="alert('This is a placeholder. Test booking functionality coming soon!')"
+      >
+        Book Test
+      </button>
+    </form>
+  </main>
+
+  <footer class="border-t border-gray-800 p-6 text-center text-gray-500 text-sm">
+    <div>© 2024 Healthcare App. All rights reserved.</div>
+  </footer>
+</body>
+</html>
