@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settings - Healthcare App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="flex justify-between items-center p-6 border-b border-gray-800">
+    <h1 class="text-2xl font-bold">Healthcare App</h1>
+    <nav class="space-x-6 hidden md:flex">
+      <a href="index.html" class="hover:text-blue-400">Home</a>
+      <a href="symptom-checker.html" class="hover:text-blue-400">Check Symptoms</a>
+      <a href="find-doctor.html" class="hover:text-blue-400">Find Doctor</a>
+      <a href="book-test.html" class="hover:text-blue-400">Book a Test</a>
+      <a href="health-records.html" class="hover:text-blue-400">Health Records</a>
+      <a href="find-clinic.html" class="hover:text-blue-400">Find Clinic</a>
+      <a href="profile.html" class="hover:text-blue-400">My Profile</a>
+      <a href="settings.html" class="text-blue-400 font-semibold">Settings</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow container mx-auto px-6 py-12 max-w-3xl">
+    <h2 class="text-3xl font-extrabold mb-6">Settings</h2>
+    <section class="bg-gray-900 rounded p-6 space-y-6">
+      <div>
+        <label class="flex items-center space-x-4 cursor-pointer">
+          <span>Enable Notifications</span>
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" />
+        </label>
+      </div>
+      <div>
+        <label class="flex items-center space-x-4 cursor-pointer">
+          <span>Dark Mode</span>
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" checked disabled />
+        </label>
+        <p class="text-gray-400 text-sm mt-1">Dark mode is enabled by default and cannot be disabled.</p>
+      </div>
+      <div>
+        <label class="flex items-center space-x-4 cursor-pointer">
+          <span>Receive Email Updates</span>
+          <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" />
+        </label>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-800 p-6 text-center text-gray-500 text-sm">
+    <div>© 2024 Healthcare App. All rights reserved.</div>
+  </footer>
+</body>
+</html>
